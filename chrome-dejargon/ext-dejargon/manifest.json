@@ -1,0 +1,22 @@
+{
+    "name": "Lamill Dejargon",
+    "version": "1.0.0",
+    "description": "DeJargon explains jargon in human-readable language",
+    "manifest_version": 3,
+    "author": "Vijo Cherian",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["script.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "action": {
+      "default_title": "Extract Page Text"
+    }
+}  
