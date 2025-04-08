@@ -1,0 +1,22 @@
+{
+    "name": "Lamill Synonymizer",
+    "version": "1.0.0",
+    "description": "Find synonyms of highlighted word.",
+    "manifest_version": 3,
+    "author": "Lamill Websystems",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["script.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "action": {
+      "default_title": "Lamill Synonymizer"
+    }
+}  
