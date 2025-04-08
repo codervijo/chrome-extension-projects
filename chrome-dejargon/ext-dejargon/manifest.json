@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Explains highlighted words in plain English using dictionary APIs.",
     "manifest_version": 3,
-    "author": "Vijo Cherian",
+    "author": "Lamill Websystems",
     "permissions": ["activeTab", "scripting"],
     "host_permissions": ["<all_urls>"],
     "background": {
