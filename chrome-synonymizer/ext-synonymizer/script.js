@@ -52,7 +52,7 @@ function fetchAndShowDefinition(word, popup) {
 document.addEventListener("mouseup", (event) => {
   const selection = window.getSelection().toString().trim();
   if (selection.length > 0) {
-    createPopup(event.pageX + 10, event.pageY + 10, selection);
+    createPopup("Fetching synonym...", event.pageX + 10, event.pageY + 10, selection);
   }
 });
   
